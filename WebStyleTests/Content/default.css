@@ -1,0 +1,107 @@
+﻿body {
+    background-color: gray;
+    font-size: large;
+}
+/* attribute exists*/
+a[href]:hover:after {
+	content: " (" attr(href) ")";
+	background-color: yellow;
+}
+
+/* atribute has a value*/
+a[href='www.lacaixa.es']:hover {
+	background-color: red;
+}
+
+/* contains value*/
+a[href*='adeslas']:hover {
+	background-color: lightpink;
+}
+
+/* starts with */
+a[href^='http']:hover {
+	background-color: lightcyan;
+}
+
+/* end with*/
+a[href$='jpg']:hover {
+	background-color: yellow;
+}
+
+/* contains*/
+a[data-linktype ~='externalLink'] {
+	background-color: yellow;
+}
+a[data-linktype ~='internalLink'] {
+	background-color: lime;
+}
+
+a[data-linktype ~='imageFile']:after {
+	content: '(img)';
+}
+a[data-linktype ~='zipFile']:after {
+	content: '(zip)';
+}
+
+/* elemnt type selector*/
+button {
+	background-color: white;
+	color: gray;
+}
+
+/* id selector*/
+#btnSave {
+	background-color: white;
+	color: red;
+}
+
+/* class selector*/
+.myStyle {
+	background-color: white;
+	color: green;
+}
+
+/* inheritance*/
+li:nth-child(even) {
+	font-size: small;
+}
+li:nth-child(4) {
+	font-size: inherit;
+}
+
+div p.highlight{
+    font-size: xx-large;
+    background-color: yellow;
+}
+
+div p:first-of-type. {
+    background-color: blue;
+}
+
+p.bordersall {
+    border: 10px;
+    padding: 25px;
+    margin: 15px;
+    background-color: yellow;
+    border-style: solid;
+    border-color: green;
+}
+
+p.bordersseparate {
+    border-bottom: 10px;
+    border-right: 5px;
+    border-left: 1px;
+    border-top: 0px;
+    padding: 25px;
+    margin: 15px;
+    background-color: yellow;
+    border-style: solid;
+    border-color: blue;
+}
+/*
+#readingPane p::first-letter{
+    color: blue;
+    font-size: x-large;
+}
+*/
+
