@@ -194,22 +194,3 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
-
-#mine---------------------------------------
-# ignore files with extension .o or .a
-*.[oa]
-
-#ignore files ending in ~
-*~
-
-#ignore files ending in ~
-*.suo
-
-# ignore all files in bin folder
-/WebStyleTests/bin/
-
-# ignore all files in obj folder
-/WebStyleTests/obj/
-
-# ignore all files in obj folder
-/WebStyleTests/My Project/
